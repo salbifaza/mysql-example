@@ -4,21 +4,21 @@
 */
 
 
-/* Create the database */
-CREATE DATABASE  IF NOT EXISTS classicmodels;
+CREATE DATABASE  IF NOT EXISTS case_study;
 
 /* Switch to the classicmodels database */
-USE classicmodels;
+USE case_study;
 
 /* Drop existing tables  */
-DROP TABLE IF EXISTS productlines;
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS offices;
-DROP TABLE IF EXISTS employees;
-DROP TABLE IF EXISTS customers; 
-DROP TABLE IF EXISTS payments;
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS orderdetails;
+DROP TABLE IF EXISTS
+  `orderdetails`,
+  `orders`,
+  `payments`,
+  `customers`,
+  `employees`,
+  `offices`,
+  `products`,
+  `productlines`;
 
 /* Create the tables */
 CREATE TABLE productlines (
